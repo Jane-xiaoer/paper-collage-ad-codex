@@ -1,7 +1,7 @@
 ---
 name: paper-collage-ad
 description: This skill should be used when the user asks to "做一个剪纸广告", "制作拼贴广告片", "把产品做成纸片定格动画", "做一个有趣的产品广告", "生成半色调剪纸分镜", "把静态拼贴图做成广告视频", "把广告拉长一点", "参考这个声音配音", or wants a complete branded paper-cut advertisement from brief to validated MP4 rather than only prompts or still images.
-version: 1.0.0
+version: 1.0.1
 compatibility: OpenAI Codex desktop and CLI
 ---
 
@@ -234,6 +234,7 @@ Treat a valid container as insufficient. A playable MP4 can still have a truncat
 
 ## Resources
 
+- `WORKFLOW.zh-CN.md`: human-facing end-to-end Chinese guide from Codex installation through final MP4 delivery.
 - `references/dependencies.md`: consolidated core and optional tool list; what each script needs.
 - `references/collage-dimensions.md`: precise craft vocabulary and JSON fields.
 - `references/prompt-patterns.md`: reusable keyframe and motion prompt structures.

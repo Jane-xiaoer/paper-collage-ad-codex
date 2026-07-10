@@ -2,7 +2,7 @@
 
 一个适合在 OpenAI Codex 中运行的完整剪纸 / 编辑拼贴广告制作 skill。从创意、脚本、分镜和关键帧开始，继续完成动画、旁白、音乐、音效、合成与 MP4 质检。
 
-> Codex edition: `1.0.0`
+> Codex edition: `1.0.1`
 >
 > Skill name: `paper-collage-ad`
 >
@@ -32,6 +32,8 @@ git clone https://github.com/Jane-xiaoer/paper-collage-ad-codex.git \
 ```
 
 Codex 会读取根目录的 `SKILL.md`，并按需调用 `references/`、`examples/` 和 `scripts/`。
+
+从安装到最终 MP4 的完整中文操作步骤见：[WORKFLOW.zh-CN.md](WORKFLOW.zh-CN.md)。
 
 ## 能完成什么
 
