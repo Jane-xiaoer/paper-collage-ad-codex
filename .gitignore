@@ -1,0 +1,34 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Private voice assets and generated speaker conditioning
+assets/voice-reference/
+assets/voice-model/
+assets/voice-raw/
+assets/voice-final/
+**/*.npz
+
+# Large third-party runtimes and model weights
+tools/
+models/
+*.safetensors
+*.ckpt
+*.pth
+
+# Generated media
+renders/
+output/
+outputs/
+*.mp4
+*.mov
+*.m4a
+*.wav
+*.aiff
+*.mp3
+
+# Local package state
+node_modules/
+.venv/
+__pycache__/

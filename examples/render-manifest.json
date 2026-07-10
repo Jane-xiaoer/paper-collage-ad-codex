@@ -1,0 +1,25 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "crf": 17,
+  "audio": "assets/audio/final-mix.wav",
+  "scenes": [
+    {
+      "image": "assets/images/scene-01.png",
+      "duration": 6,
+      "transition": "fade",
+      "transitionDuration": 0.4,
+      "zoomPerFrame": 0.0002,
+      "maxZoom": 1.025
+    },
+    {
+      "image": "assets/images/scene-02.png",
+      "duration": 6,
+      "transition": "slideleft",
+      "transitionDuration": 0.4,
+      "zoomPerFrame": 0.00018,
+      "maxZoom": 1.02
+    }
+  ]
+}

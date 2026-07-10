@@ -1,0 +1,40 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "crf": 18,
+  "voiceGain": 1.1,
+  "music": "assets/audio/underscore.mp3",
+  "musicVolume": 0.1,
+  "ducking": {
+    "enabled": true,
+    "threshold": 0.025,
+    "ratio": 6,
+    "attackMs": 20,
+    "releaseMs": 280
+  },
+  "targetLufs": -16,
+  "truePeak": -1.5,
+  "scenes": [
+    {
+      "video": "renders/scene-01.mp4",
+      "sourceDuration": 6,
+      "duration": 9,
+      "voice": "assets/voice-final/01.wav",
+      "voiceStart": 0.35,
+      "sfx": [
+        { "file": "assets/audio/click-soft.mp3", "at": 2.5, "volume": 0.18 }
+      ]
+    },
+    {
+      "video": "renders/scene-02.mp4",
+      "sourceDuration": 6,
+      "duration": 8,
+      "voice": "assets/voice-final/02.wav",
+      "voiceStart": 0.35,
+      "sfx": [
+        { "file": "assets/audio/whoosh-short.mp3", "at": 0, "volume": 0.18 }
+      ]
+    }
+  ]
+}

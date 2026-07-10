@@ -1,0 +1,59 @@
+{
+  "project": "example-paper-collage-ad",
+  "aspectRatio": "16:9",
+  "language": "zh",
+  "metaphor": "one recurring visual world that carries the whole film, e.g. a paper factory line",
+  "cta": "brand + one-line call to action on the final frame",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "role": "pain joke",
+      "idea": "one sentence stating the single idea of the scene",
+      "action": "one physical paper action that shows the pain",
+      "voice": "旁白短句，逗号分隔的短语",
+      "joke": "the one spoken joke (escalation / literal metaphor / dry refusal / contrast / button line)",
+      "label": "2-4 word burned-in label",
+      "durationDraft": 9
+    },
+    {
+      "id": "scene-02",
+      "role": "product entrance",
+      "idea": "the product arrives as a physical intervention in that world",
+      "action": "product slides in and changes the scene",
+      "voice": "旁白短句",
+      "joke": "one spoken joke",
+      "label": "burned-in label",
+      "durationDraft": 8
+    },
+    {
+      "id": "scene-03",
+      "role": "capability proof",
+      "idea": "prove one capability through a paper action, not a feature card",
+      "action": "a visible transformation",
+      "voice": "旁白短句",
+      "joke": "one spoken joke",
+      "label": "burned-in label",
+      "durationDraft": 10
+    },
+    {
+      "id": "scene-04",
+      "role": "trust or privacy beat",
+      "idea": "turn the trust/privacy claim into a memorable visual event",
+      "action": "a decisive physical beat, e.g. a door closing on the cloud",
+      "voice": "旁白短句",
+      "joke": "one spoken joke",
+      "label": "burned-in label",
+      "durationDraft": 9
+    },
+    {
+      "id": "scene-05",
+      "role": "resolution and CTA",
+      "idea": "resolve the world into one clean brand and CTA frame",
+      "action": "everything converges into the logo",
+      "voice": "旁白短句 + 短促收尾 tag",
+      "joke": "short confident button line",
+      "label": "brand + CTA",
+      "durationDraft": 8
+    }
+  ]
+}

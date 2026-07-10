@@ -1,0 +1,22 @@
+{
+  "speaker": "../assets/voice-model/speaker-v2.npz",
+  "outputDir": "../assets/voice-final",
+  "emotion": "calm:0.70,happy:0.20,surprised:0.10",
+  "emoAlpha": 0.55,
+  "diffusionSteps": 20,
+  "speed": 1.03,
+  "memoryLimit": 20,
+  "lines": [
+    {
+      "id": "01",
+      "text": "第一句旁白写在这里。",
+      "seed": 2101
+    },
+    {
+      "id": "02",
+      "text": "第二句旁白写在这里。",
+      "emotion": "calm:0.55,happy:0.30,surprised:0.15",
+      "seed": 2102
+    }
+  ]
+}

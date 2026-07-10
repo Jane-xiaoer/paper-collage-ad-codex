@@ -1,0 +1,15 @@
+.env
+.env.*
+assets/voice-reference/
+assets/voice-model/
+assets/voice-raw/
+assets/voice-final/
+assets/audio/
+renders/
+*.npz
+*.wav
+*.aiff
+*.mp3
+*.m4a
+*.mp4
+*.mov

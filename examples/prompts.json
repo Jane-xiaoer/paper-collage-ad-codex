@@ -1,0 +1,25 @@
+{
+  "styleSystem": "physical layered editorial paper collage, photographed from directly above, flat even lighting, fine uncoated-paper field, black-and-white round-dot halftone, crisp machine-cut edge, thin warm-white keyline, soft down-right shadow",
+  "palette": ["#595850", "#F3EFE6", "<brand-accent-hex>"],
+  "negative": "glossy 3D, neon, purple-blue tech gradient, photorealistic people, childish faces, dirty torn edges, heavy shadows, malformed text, extra logos, perspective distortion",
+  "styleAnchor": {
+    "scene": "scene-01",
+    "nbGenerations": 4,
+    "references": [
+      { "role": "brand icon", "file": "assets/brand/icon.png" }
+    ],
+    "prompt": "STYLE: <styleSystem>. SCENE: <one idea + one physical joke, name every paper character and prop>. BRAND: state exact palette values and which element may use the accent. COMPOSITION: dominant action across >=40% of frame, reserve negative space for the label. TEXT: burn-in label 'XXXX' verbatim, no extra characters. AVOID: <negative>."
+  },
+  "scenes": [
+    {
+      "id": "scene-02",
+      "references": [
+        { "role": "strict style reference", "file": "assets/keyframes/scene-01.png" },
+        { "role": "previous scene continuity", "file": "assets/keyframes/scene-01.png" },
+        { "role": "official brand reference", "file": "assets/brand/icon.png" },
+        { "role": "product screenshot", "file": "assets/screenshots/feature.png" }
+      ],
+      "prompt": "Image 1 is the strict style reference. Preserve its paper field, halftone density, cut edges, shadows, lighting and character proportions. Image 2 is the previous scene continuity reference. Image 3 is the official brand reference. NEW ACTION: <describe only the new scene action, reuse recurring characters with the same props>. TEXT: burn-in label 'YYYY' verbatim. AVOID: <negative>."
+    }
+  ]
+}

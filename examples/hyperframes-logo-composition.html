@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh" data-resolution="landscape">
+<head>
+<meta charset="UTF-8"/>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Great+Vibes&display=swap');
+  html,body{margin:0;padding:0;width:1920px;height:1080px;overflow:hidden;}
+  #main-composition{position:relative;width:1920px;height:1080px;overflow:hidden;
+    background:url(assets/paper-bg.jpg) center/cover no-repeat;font-family:"Outfit",sans-serif;}
+  #icon{position:absolute;left:960px;top:250px;margin-left:-170px;width:340px;height:340px;
+    filter:drop-shadow(0 10px 16px rgba(110,100,70,.22));}
+  #shutter,#center{position:absolute;inset:0;background:url(assets/brand-icon-paper.jpg) center/contain no-repeat;}
+  #shutter{clip-path:circle(49% at 50% 50%);}
+  #center{clip-path:circle(21% at 50% 50%);}
+  #wordmark{position:absolute;left:0;right:0;top:600px;text-align:center;
+    font-family:"Great Vibes","Snell Roundhand",cursive;font-size:180px;color:#6f7d52;line-height:1;
+    text-shadow:0 2px 3px rgba(110,100,70,.14);}
+  #url{position:absolute;left:0;right:0;top:830px;text-align:center;font-size:60px;font-weight:600;letter-spacing:1px;}
+  #url .x{color:#4a453b;} #url .o{color:#6f7d52;} #url .c{color:#a9a196;}
+  #dl{position:absolute;left:960px;top:945px;margin-left:-34px;width:68px;height:68px;border-radius:16px;
+    background:#e7ddc7;box-shadow:0 6px 12px rgba(110,100,70,.16), inset 0 1px 0 rgba(255,255,255,.5);
+    display:flex;align-items:center;justify-content:center;}
+  #dl svg{width:32px;height:32px;stroke:#6f7d52;stroke-width:2.4;fill:none;}
+</style>
+</head>
+<body>
+  <div id="main-composition" data-composition-id="main" data-width="1920" data-height="1080" data-duration="5">
+    <div id="icon"><div id="shutter"></div><div id="center"></div></div>
+    <div id="wordmark">Brand</div>
+    <div id="url"><span class="x">your</span><span class="o">brand</span><span class="c">.com</span></div>
+    <div id="dl"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({paused:true});
+    gsap.set(["#wordmark","#url","#dl"],{opacity:0,y:26});
+    gsap.set("#shutter",{transformOrigin:"50% 50%"});
+    tl.to("#shutter",{rotation:40,ease:"none",duration:5},0);
+    tl.to("#wordmark",{opacity:1,y:0,duration:.85,ease:"back.out(1.6)"},.5);
+    tl.to("#url",{opacity:1,y:0,duration:.6,ease:"power2.out"},1.15);
+    tl.to("#dl",{opacity:1,y:0,duration:.5,ease:"back.out(2.2)"},1.65);
+    tl.to("#wordmark",{y:-16,duration:.36,yoyo:true,repeat:1,ease:"power1.inOut"},2.7);
+    tl.to("#dl",{y:-9,duration:.3,yoyo:true,repeat:1,ease:"power1.inOut"},3.15);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["main"] = tl;
+  </script>
+</body>
+</html>

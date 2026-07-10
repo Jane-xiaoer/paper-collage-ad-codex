@@ -1,0 +1,38 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "crf": 18,
+  "duration": 6,
+  "steps": 8,
+  "finalHold": 1.2,
+  "fadeDuration": 0.5,
+  "background": "assets/layers/scene-01-field.png",
+  "finalFrame": "assets/keyframes/scene-01.png",
+  "layers": [
+    {
+      "image": "assets/layers/scene-01-stage.png",
+      "from": "bottom",
+      "x": 0,
+      "y": 240,
+      "startAt": 0.2,
+      "travel": 0.8
+    },
+    {
+      "image": "assets/layers/scene-01-hand.png",
+      "from": "left",
+      "x": 620,
+      "y": 300,
+      "startAt": 0.9,
+      "travel": 0.9
+    },
+    {
+      "image": "assets/layers/scene-01-chip.png",
+      "from": "right",
+      "x": 1180,
+      "y": 360,
+      "startAt": 1.6,
+      "travel": 0.7
+    }
+  ]
+}
